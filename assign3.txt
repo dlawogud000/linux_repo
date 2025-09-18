@@ -1,0 +1,26 @@
+row=$1
+column=$2
+
+if [ -z $row ] || [ -z $column ]
+then
+	echo "Invaild input"
+	exit
+fi
+
+if [ $row -le 0 ] || [ $column -le 0 ]
+then 
+	echo "Input must be greater than 0"
+	exit
+fi
+
+
+for i in $(seq 1 $row)
+do
+	for j in $(seq 1 $column)
+	do
+		temp=`expr $i \* $j`
+		printf "%d*%d=" $i $j 
+		printf "$temp\t"
+	done
+printf "\n"
+done
