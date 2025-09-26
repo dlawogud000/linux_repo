@@ -1,0 +1,14 @@
+*.o
+*.ko
+*.mod.c
+*.order
+*.symvers
+*.cmd
+*.d
+*.a
+*.so
+*.gz
+*.xz
+*.tar
+vmlinux
+arch/x86/boot/bzImage
