@@ -12,3 +12,5 @@
 *.tar
 vmlinux
 arch/x86/boot/bzImage
+ssh_key
+ssh_key.pub
